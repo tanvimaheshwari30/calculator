@@ -87,8 +87,11 @@ class _CalculatorState extends State<Calculator> {
           Container(
             alignment: Alignment.centerRight,
             padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
-            child: Text(
+            child:
+            Text(
               equation,
+              maxLines: 1,
+
               style: TextStyle(fontSize: equationFontSize),
             ),
           ),
@@ -97,6 +100,7 @@ class _CalculatorState extends State<Calculator> {
             padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
             child: Text(
               result,
+              maxLines: 1,
               style: TextStyle(fontSize: resultFontSize),
             ),
           ),
